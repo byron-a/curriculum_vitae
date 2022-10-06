@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="./Assets/image/favicon-32x32.png"/>
+    <title>Curriculum Vitae</title>
+
+   <style>
+       th{
+           color: rgba(8, 8, 153, 0.87);
+       }
+   
+      body {
+          margin: 60px 100px 100px;
+          font-family: 'Ubuntu', sans-serif;
+      }
+      @media screen and (max-width:700px) {
+        body {
+            margin:60px 80px 100px ;
+        }
+      }
+
+      .tool, .portfolio {
+        font-weight: bolder;
+        cursor: pointer;
+        color: rgb(16, 44, 97);
+        width: fit-content;
+      }
+      .p {
+        cursor: pointer;
+        color: rgb(28, 68, 141);
+        width: fit-content;
+      }
+      .dropdown {
+        display: none;
+      }
+
+      .appear {
+        display: block;
+      }
+      /* .disappear {
+        display: none;
+      } */
+    .htmlCssBootstrap, .jsJquery, .wps, .managerSw {
+        display: none;
+        position: fixed;
+        top: 20%;
+        right:10% ;
+        left: 40%;
+        background-color: rgba(255, 255, 255, 0.932);
+        padding-bottom: 30px;
+        width: 300px;
+        border: none;
+        border-radius: 7px;
+    }
+    .htmlCssBootstrap, .jsJquery, .wps, .managerSw ul{
+        
+        padding-top: 0px;
+        font-size: smaller;
+        font-family:'Ubuntu', sans-serif;
+    }
+    .htmlCssBootstrap, .jsJquery, .wps, .managerSw ul li {
+        line-height: 1.7; 
+        color:rgb(28, 67, 138) ;     
+    }
+    a {
+        font-weight: 500;
+        text-decoration: none;
+        color:rgb(28, 67, 138) ;
+    }
+    .htmlCssBootstrap, .jsJquery, .wps, .managerSw ul b{
+        color:rgb(97, 97, 97) ;
+    }
+    .click {
+        font-size: 10px;
+        background-color: rgb(64, 118, 189) ;
+        border-radius: 13px;
+        padding: 1px 4px 1px 3px;
+        color: rgb(230, 227, 227);
+    }
+
+    .footTable {
+        width:82%;
+        margin: 60px auto;
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (max-width:700px) {
+        .footTable {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+   </style>
+</head>
+
+<body style="background-color:rgba(179, 206, 200, 0.548);">
+
+    <!-- header -->
+    <header id="bookmark">
+        <h2 style="color: rgba(8, 8, 153, 0.87); font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: end;">Curriculum Vitae.</h2>
+    </header>
+    <br>
+    
+<!-- section 1 Summary-->
+    <section style="margin-top: 35px;">
+        <table cellspacing="20px">
+            <tr>
+                <td> 
+                    <img src="/Assets/image/pass.jpg" alt="Byron's Picture" width="180px" style="border-radius: 100%;" >
+                </td>
+                <td>
+                    <!-- <h4 style="color: rgba(8, 8, 153, 0.87); font-family: Verdana, Geneva, Tahoma, sans-serif;">PROFILE.</h4> -->
+                    <h3 style="color: rgba(8, 8, 153, 0.87);"><b>Byron Ayalogu. O</b></h3>
+                    <hr>
+                    <p>
+                        I am a <b>Front-End Web Developer. </b><br>
+                        Earned a bachelor's degree in Mechanical Engineering, took a role as a Business/Data Analyst, before navigating to becoming a <b><i>Front-End Engineer.</i></b>
+                        <!-- As a Data Analyst I thought myself how to find(seek) data, clean data, decide and project  for the best result, putting into consideration how the immediate enviroment reacts/responds. -->
+                        <p><b>Status;</b> I m open to learn. <a href="#skill" style="color:rgb(28, 67, 138); text-decoration: none;">Go to Skills.</a> </p> 
+                        
+                    </p>
+                </td>
+            </tr>
+        </table>
+        
+    </section>
+
+    <!-- section 2 Education -->
+    <section>
+        <h4 style="color: rgba(8, 8, 153, 0.87);">EDUCATION. </h4>
+        <hr>
+        <table cellspacing="10px">
+            <tr>
+                <td>
+                    <p>
+                        2006-2009: 
+                    </p>
+                </td>
+                <td>
+                    <p><b>
+                       SENIOR SECONDARY CERTIFICATE/W.A.E.C & N.E.C.O(Sciences).</b></p> 
+                    <p>ST' Augustine Seminary Ezzamgbo, Ebonyi State.</p>
+                    <p>Award: Sports prefect for a year.</p>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        2009-2010:
+                    </p>
+                </td>
+                <td>
+                   <p><b>CERTIFICATE IN CAMBRIDGE INTERNATIONAL EXAM.</b></p>
+                   <p>GCE O-LEVEL & GCE A-LEVEL</p>
+                   <P>Doyen Academy, Amene, Enugu State.</P>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2010-2015: </p>
+                </td>
+                <td>
+                    <p><b >B.ENG IN MECHANICAL ENGINEERING.</b></p>
+                    <p>Madonna University Akpugo Campus, Enugu State.</p>
+                    <p>Final Year Project; Solar Engineering of Terminal Processes.</p>
+                    <P>Award: Basketball captain for a year.</P>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- section 3 Hobbies-->
+    <section>
+        <h4 style="color: rgba(8, 8, 153, 0.87);">HOBBIES.</h4>
+        <hr>
+        <ul>
+            <li>Playing Basketball</li>
+            <li>Listening to Music</li>
+            <li>Swimming</li>
+            <li>Curiousity towards Learning new things</li>
+        </ul>
+        
+    </section>
+
+    <!-- section 4 Work Experience-->
+    <section>
+        <h4 style="color: rgba(8, 8, 153, 0.87);">WORK EXPERIENCE.</h4>
+        <hr>
+        <table cellspacing="10px" >
+            <tr>
+                <td width="7%">
+                    <P >
+                        2013-2014:   
+                    </P>
+                    <p>Mechanical Technician Intern.</p>
+
+                </td>
+                <td>
+                    <ul>
+                        <p><b>INDUSTRIAL TRAINING IN PHINOMAR NIGERIA LTD, ENUGU.</b></p>
+                        <li><b><i>Activity : </i></b> Aided in the installation of an industrail soy-bean destoning machine.</li>
+                        <li><b>Phinomar Nigeria Limited</b> is a company that deals in poultry farming(one of the biggest poultry farms in the eastern part of Nigeria). <b>Phinomar</b> also has other departments that: (1). produces chicken feed, (2). processess soya bean components( like ...soya-meal, soya-cake and soya crude oil)...etc.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        2017-2020:    
+                    </p> 
+                    <p>
+                        Interim Project Manager/Logistics.
+                    </p>
+                </td>
+                <td>
+                    <ul>
+                        <p><b>PHINOMAR NIG LTD MILLING & FOODS DIVISION.</b></p>
+                        <li><b><i>Activity : </i></b> Served to develop, structure and scale product sales at Milling & Foods department as the Project Manager, 
+                            also took charge/oversaw logistics which involved inventory of raw materials and packaged final products (quantity of products produced daily) 
+                            in tally with the amount of materials used. Also product-sales in tally with warehoused products (cash balancing).</li>
+                            <li>
+                              <b><i>Achievement : </i></b> The Milling and Foods division was at the verge of winding up(on-forclose) when i resumed, 
+                              but we managed to run the division for a further three and half years despite the debts
+                              the company incurred in the past years.  
+                            </li>
+                    </ul>
+                </td>
+            </tr>
+
+            
+            
+            <tr>
+                <td>
+                    <p>
+                        2020-2021:       
+                    </p>
+                    <p>
+                        Project Development Manager.
+                    </p>
+                </td>
+                <td>
+                    <ul>
+                        <p><b>JIVEPUBS NIG LTD.</b></p>
+                        <li><b><i>Activity : </i></b>  I was privileged/opportuned to help develop the business from root; developed its business model, financial projection, dynamic working order & sales formation.. <a href="#skill" style="color:rgb(28, 67, 138); text-decoration: none; font-size:smaller ;">Go to Skills/Tools.</a> </p> 
+                        </li>
+                        <li>
+                            In August 2020, we tried to re-structure the Milling and Foods department, by making it autonomous (detached from the parent company: Phinomar Nig Ltd.) to enable its revenue be tracked properly. It was named JivePubs Nig ltd.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><b><i>For Personal Interest.</i></b></p>
+                    <p>2018-2021:</p>
+                    <p>Logistics Analyst.</p>
+
+                </td>
+                <td>
+                    <ul>
+                        <p><b>EavorFoods.</b></p>
+                        <li>
+                            
+                    <p>I was working on this(new idea) asynchronously while working for Phinomar.Nig.LTD (Milling and Foods dept.) as the Logistics Analyst. Foresaw Production, sales, customer feedbacks. 
+                        We produced soya milk at a small scale for three years, then in 2021 applied for TEF(Tony Elumelu Foundation) and was selected among the potential grant winners.</p>
+                        </li>
+                    </ul>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><b>4th Quarter 2021</b></p>
+                    <p>Started my Coding Journey...</p>
+                </td>
+                <td>
+                    <ul>
+                        
+                        <li>
+                            
+                            <p><b>Computer Programming Training with help from Dave Partner, TECH365...e.t.c</b></p>
+                        </li>
+                    </ul>
+                    
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
+
+    <!-- section 5 Skills-->
+    <section>
+        <h4 id="skill" style="color: rgba(8, 8, 153, 0.87);">SKILLS.</h4>
+        <hr>
+        <ul>
+            <p><b>Main:</b> </p>
+            <li>Web Development.</li>
+           <span style="line-height:0.5 ;">
+            <p class="portfolio "> Portfolio : <span class="click">Click here</span></p>
+            <div class="dropdown ">
+                <p class="hcb p">- Html, Css & Bootstrap,</p>
+                <p class="jsjq p">- Javascript & jQuery,</p>
+                <p>- *React.js(recently learning)</p>
+            </div>
+            
+           </span>
+            <br>
+            <li>Data Analytics.</li>
+            <span style="line-height:0.5 ;">
+            <p class="tool">Tools : <span class="click">Click here</span></p>
+            <div class="dropdown">
+                <p class="wps1 p">- Writer Presentation Spreadsheet(WPS) Office,</p>
+                <p class="manaSw p">- Manager (financial software),</p>
+                <p>- Book-keeping.</p>
+            </div>
+            
+            <!-- <P>Minor:</P>
+            <li>Able to effectively cope with accelerating challenges</li>
+            <li>Efficient workload and time management</li>
+            <li>Organizational, Adminstrative and General office skills</li>
+            <li>Analyzing and adjusting work procedures for maximum efficiency</li>
+            <li>Flexible and open to change</li>
+             -->
+            </span>
+            
+             
+        </ul>
+            
+        
+
+    </section>
+    <!-- section 5a dropdown-->
+    <section>
+        <article class="htmlCssBootstrap "> 
+            <ul >
+                 <b style="word-spacing:2px;"> My Version of :</b>
+                <li style="margin-top:5px ;"><a href="">Google Web Site</a> </li>
+                <li><a href="">TECH365 Web Site</a> </li>
+                <li><a href="">Tin Dog Web Site</a> </li>
+            </ul>
+                </article>
+                <article class="jsJquery"> 
+                    <ul>
+                        <b style="word-spacing:2px;"> My Version of :</b>
+                        <li style="margin-top:5px ;"><a href="">Dice Game</a></li>
+                        <li><a href="">Note Web App</a></li>
+                        <li><a href="">Simon Game</a></li>
+                        <li><a href="">Drum Kit</a></li>
+                        <li><a href="">Notification Page</a></li>
+                    </ul>
+                        </article>
+                 <article class="wps"> 
+                    <ul>
+                        <b style="word-spacing:2px;"> JivePubs' doc. :</b>
+                                <li style="margin-top:5px ;"><a href="./CV_Folder/jive/JIVE PUBS BUSINESS CANVAS.png 2.png">Jive's Business Canvas.</a></li>
+                                <li><a href="./CV_Folder/jive/JIVE PUBS CASHFLOW PROJECTION.xlsx2.xlsx">Cashflow projection</a></li>
+                                <li><a href="./CV_Folder/jive/JIVE PUBS investment profile.docx print.docx">Investment Profile </a></li>
+                                <li><a href="./CV_Folder/jive/inivite4.png">Value</a></li>
+                        <b style="word-spacing:2px;"> EavorFoods' doc. :</b>      
+                                <li style="margin-top:5px ;"><a href="./CV_Folder/eavor/THE TEF BUSINESS SUMMARY, EAVORFOODS.docx">Business analysis (contact me for this file).</a></li>
+                                <li><a href="./CV_Folder/eavor/EAVOR FOODS CASH FLOW SAMPLE.xlsx">Cashflow projection</a></li>
+                                <li><a href="./CV_Folder/eavor/EAVORFOODS2.pptx">Business Presentation</a></li>
+                        <b style="word-spacing:2px;"> Phinomar' doc. :</b>      
+                                <li style="margin-top:5px ;"><a href="./CV_Folder/phinomar/MILLING AND FOODS CASH FLOW.2.xlsx">Cashflow projection</a></li>
+                                <li><a href="./CV_Folder/phinomar/1516341614906.jpg">flyer</a></li>
+                    </ul>
+                 </article>
+                 <article class="managerSw "> 
+                    <ul >
+                         <b style="word-spacing:2px;"> Finance software :</b>
+                        <li style="margin-top:5px ;"><a href="./CV_Folder/eavor/EAVOR FOODS INC. (2021-07-01).manager">Eavorfoods' Revenue doc.</a> </li>
+                    </ul>
+                        </article>        
+            
+    </section>
+   
+    <!-- section 6 Contact details -->
+    <section >
+        <div class="footTable"  >
+            <div style="margin:7%;">
+                <table cellpadding="10px" align="center">
+                <tr>
+                    <th>Contact Address:</th>
+                </tr>
+                <tr >
+                    <td width="50px"><a style="text-decoration:none ;" href="https://maps.app.goo.gl/58HeUnHFYx5m1YVN7"> No: 58, yaya abatan, ogba road, ikeja.</a>  </td>
+                </tr>
+                <tr>
+                    <th> LinkedIn:</th>
+                </tr>
+                <tr>
+                    <td><a style="text-decoration: none" href="http://www.linkedin.com/in/byron-okezie/7b52a08b">www.linkedin.com/in/byron-okezie/7b52a08b</a></td>
+                </tr>
+                </table>
+            </div>
+            <div style="margin:7% ;">
+                <table cellpadding="10px" align="center">
+                    <tr>
+                        <th>Mobile:</th>
+                    </tr>
+                    <tr>
+                        <td width="50px">
+                            <a style="text-decoration: none" href="tel:+2348082976168">+2348082976168;</a></td>
+                    </tr>
+                    <tr>
+                        <th> Marital Status:</th>
+                    </tr>
+                    <tr align="center">
+                        <td>Single</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin:7% ;">
+                <table cellpadding="10px" align="center">
+                    <tr>
+                        <th>Email:</th>
+                    </tr>
+                    <tr >
+                        <td width="50px"><a style="text-decoration: none" href="mailto:byronayalogu@gmail.com">byronayalogu@gmail.com</a> </td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                    </tr>
+                    <tr align="center">
+                        <td> English,
+                            Igbo</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        
+        <br>
+     
+    </section>
+
+    <!-- footer section 7 -->
+    <section>
+        <footer align="right" >
+            <a style="text-decoration: none; " href="#bookmark">Back To Top <sup><big>^</big></sup></a>
+       
+       </footer>
+    </section>
+   
+
+    
+
+
+
+
+<!-- JavaScript -->
+<script>
+    let body = document.querySelector('body');
+    let sections = document.querySelectorAll('section');
+    let dropdown = document.querySelectorAll('.dropdown');
+    let tool = document.querySelector('.tool');
+    let portfolio = document.querySelector('.portfolio');
+    let hcb = document.querySelector('.hcb');
+    let jsjq = document.querySelector('.jsjq');
+    let htmlCssBootstrap = document.querySelector('.htmlCssBootstrap')
+    let jsJquery = document.querySelector('.jsJquery');
+    let wps = document.querySelector('.wps');
+    let wps1 = document.querySelector('.wps1');
+    let managerSw = document.querySelector('.managerSw');
+    let manaSw = document.querySelector('.manaSw');
+
+
+
+    //First initialization....
+    let count = 0;
+
+    // CODE for PORTFOLIO dropdown behaviour.....
+    portfolio.addEventListener('click', ()=>{dropdown[0].classList.toggle('appear');
+        count = 1;
+        none();
+        });
+
+    hcb.addEventListener('click', function(){ 
+       if(jsJquery.style.display == 'block'){
+            htmlCssBootstrap.style.display = 'block';
+            jsJquery.style.display = 'none';
+        }else
+        if(count >0){htmlCssBootstrap.style.display = 'block';
+             count = 0;
+           }else if(count < 1){htmlCssBootstrap.style.display = 'none';
+           count++;
+        }
+    });
+function none(){
+    htmlCssBootstrap.style.display = 'none';
+        jsJquery.style.display = 'none';
+}
+    
+    jsjq.addEventListener('click', function(){
+        if(htmlCssBootstrap.style.display == 'block'){
+            jsJquery.style.display = 'block';
+            htmlCssBootstrap.style.display = 'none';
+        }else
+        if(count >0){jsJquery.style.display = 'block';
+               count = 0;
+               htmlCssBootstrap.style.display = 'none';
+           }else if(count < 1){jsJquery.style.display = 'none'
+            count++
+        }
+    });  
+
+// CODE for TOOL dropdown behaviour.....
+tool.addEventListener('click', ()=>{dropdown[1].classList.toggle('appear')
+    count = 1;
+    none();
+});
+wps1.addEventListener('click', function(){
+        if(managerSw.style.display == 'block'){
+            wps.style.display = 'block';
+            managerSw.style.display = 'none';
+        }else
+        if(count >0){wps.style.display = 'block';
+               count = 0;
+               managerSw.style.display = 'none';
+           }else if(count < 1){wps.style.display = 'none'
+            count++
+        }
+    });  
+
+manaSw.addEventListener('click', function(){
+        if(wps.style.display == 'block'){
+            managerSw.style.display = 'block';
+            wps.style.display = 'none';
+        }else
+        if(count >0){managerSw.style.display = 'block';
+               count = 0;
+               wps.style.display = 'none';
+           }else if(count < 1){managerSw.style.display = 'none'
+            count++
+        }
+    });  
+    
+
+//CODE for HIDE dropdown on body click!....
+let disappear = false;
+    document.addEventListener('click', ()=>{
+        if(disappear==true){
+            htmlCssBootstrap.style.display = 'none';
+            jsJquery.style.display = 'none';
+            wps.style.display = 'none';
+            managerSw.style.display = 'none';
+            disappear = false;
+            count++
+        }else       
+        if(count == 0){
+            disappear = true; 
+        }
+         
+    })         
+    
+   
+</script>
+
+https://github.com/byron-a/Curriculum-Vitae.git
+</body>
+    
+</html>
