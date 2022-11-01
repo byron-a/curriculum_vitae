@@ -1,4 +1,5 @@
 let nav = document.getElementsByClassName('n');
+
 function navbarContact(){
     setInterval(()=>{
     nav[5].classList.add('appearAgain')
