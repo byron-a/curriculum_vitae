@@ -173,7 +173,7 @@ a {
 }
 @media screen and (max-width:900px) {
     .htmlCssBootstrap, .jsJquery, .wps, .managerSw {
-        width:200px;
+        width:250px;
     }
  .footTable {
  display: flex;
