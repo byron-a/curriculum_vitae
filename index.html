@@ -406,13 +406,16 @@ import {navbarContact, navbarRemove} from "./script.js"
 var slide = 0;
 menu[0].addEventListener('click', navbar);
 
-function navbar(){
+function navbar(e){
+    e.stopPropagation()
     if(slide >0){
-        navbarRemove();
         slide=0;
+        navbarRemove();
+        
     }else{
-        navbarContact();
         slide++;
+        navbarContact();
+       
     }
     
 }
