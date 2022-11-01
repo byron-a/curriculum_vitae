@@ -199,7 +199,7 @@
         <table cellspacing="20px">
             <tr>
                 <td> 
-                    <img src="/Assets/image/pass.PNG" alt="Byron's Picture" width="180px" style="border-radius: 100%;" >
+                    <img src="./Assets/image/pass.PNG" alt="Byron's Picture" width="180px" style="border-radius: 100%;" >
                 </td>
                 <td>
                     
@@ -397,6 +397,7 @@
                 <p class="hcb p">- Html, Css & Bootstrap,</p>
                 <p class="jsjq p">- Javascript & jQuery,</p>
                 <p>- *React.js & Redux (recently learning)</p>
+                <p> <a href="https://github.com/byron-a?tab=repositories">My Github-Repos</a></p>
             </div>
             
            </span>
@@ -560,10 +561,11 @@ menu[0].addEventListener('click', navbar);
 
 function navbar(){
     if(slide >0){
-        navbarRemove()
+        navbarRemove();
+        slide=0;
     }else{
-        navbarContact()
-        slide++
+        navbarContact();
+        slide++;
     }
     
 }
