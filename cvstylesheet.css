@@ -69,6 +69,8 @@ body {
      text-align: center;            
  }
 
+ 
+
 }
 B {
  color: rgba(61, 61, 61, 0.911);
@@ -146,6 +148,10 @@ a {
  justify-content: center;
 }
 @media screen and (max-width:900px) {
+.htmlCssBootstrap, .jsJquery, .wps, .managerSw {
+        width: 250px;
+     
+}
  .footTable {
  display: flex;
  flex-direction: column;
