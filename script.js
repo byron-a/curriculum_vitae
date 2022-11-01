@@ -40,7 +40,7 @@ function about(){
 function navbarRemove(){
     for(let n of nav){
         n.classList.add('disappearAgain')
-        n.classList.remove('appearAgain')
+        location.reload()
     }
 }
 
