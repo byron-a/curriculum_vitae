@@ -553,10 +553,11 @@ menu[0].addEventListener('click', navbar);
 
 function navbar(){
     if(slide >0){
-        navbarRemove()
+        navbarRemove();
+        slide=0;
     }else{
-        navbarContact()
-        slide++
+        navbarContact();
+        slide++;
     }
     
 }
