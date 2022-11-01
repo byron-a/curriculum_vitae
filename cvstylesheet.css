@@ -40,38 +40,7 @@ body {
     align-items: center; 
     margin-right: 40px;
    }
-@media screen and (max-width:900px) {
- body {
-     margin:40px 20px 100px ;
- }
 
- .navHeader {
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     
- }
- .cv {
-     text-align: center;
- }
- .nav {
-     display: grid;
-     grid-template-columns: auto auto auto;
-     position: absolute;
-     top: 120px;
-     left: 15%;
-     right: 5%;
- 
- }
- .firstTable {
-     display: flex;
-     flex-direction: column;     
-     text-align: center;            
- }
-
- 
-
-}
 B {
  color: rgba(61, 61, 61, 0.911);
 }
@@ -147,16 +116,7 @@ a {
  display: flex;
  justify-content: center;
 }
-@media screen and (max-width:900px) {
-.htmlCssBootstrap, .jsJquery, .wps, .managerSw {
-        width: 250px;
-     
-}
- .footTable {
- display: flex;
- flex-direction: column;
- }
-}
+
 
 .n {
  display: none;
@@ -178,4 +138,45 @@ a {
 }
 .disappearAgain{
  display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:900px) {
+ body {
+     margin:40px 20px 100px ;
+ }
+
+ .navHeader {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     
+ }
+ .cv {
+     text-align: center;
+ }
+ .nav {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     position: absolute;
+     top: 120px;
+     left: 15%;
+     right: 5%;
+ 
+ }
+ .firstTable {
+     display: flex;
+     flex-direction: column;     
+     text-align: center;            
+ }
+
+}
+@media screen and (max-width:900px) {
+    .htmlCssBootstrap, .jsJquery, .wps, .managerSw {
+        width:250px;
+    }
+ .footTable {
+ display: flex;
+ flex-direction: column;
+ }
 }
