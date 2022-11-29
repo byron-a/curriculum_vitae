@@ -1,182 +1,206 @@
-
-th{
-    color: rgba(8, 8, 153, 0.87);
+th {
+  color: rgba(8, 8, 153, 0.87);
 }
 .focus {
-border: 2px solid rgba(185, 199, 196, 0.548) ;
-border-radius: 10px;
-background-color: rgba(80, 80, 80, 0.075);
-box-shadow:  0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
-margin: 20px 0;
-padding: 0 10px;
-
+  border: 2px solid rgba(185, 199, 196, 0.548);
+  border-radius: 10px;
+  background-color: rgba(80, 80, 80, 0.075);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 0 10px;
 }
 .menu {
- border: 1px solid rgb(182, 182, 182);
- padding: 2px 4px;
- border-radius: 7px;
- margin-left: 5px;
- cursor: pointer;
- 
+  display: none;
+  border: 1px solid rgb(182, 182, 182);
+  padding: 2px 4px;
+  border-radius: 7px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 .menu:hover {
- box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 body {
-   margin: 40px 100px 100px;
-   font-family: 'Ubuntu', sans-serif;
+  margin: 40px 100px 100px;
+  font-family: "Ubuntu", sans-serif;
 }
 /* .cv {
  text-align: end;
 } */
-.navHeader { 
-    display: flex; 
-    justify-content:end;
-   }
-   .nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    align-items: center; 
-    margin-right: 40px;
-   }
+.navHeader {
+  display: flex;
+  justify-content: end;
+}
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-items: center;
+  margin-right: 40px;
+}
 
 B {
- color: rgba(61, 61, 61, 0.911);
+  color: rgba(61, 61, 61, 0.911);
 }
-.tool, .portfolio {
- font-weight: bolder;
- cursor: pointer;
- color: rgb(16, 44, 97);
- width: fit-content;
- 
+.tool,
+.portfolio {
+  font-weight: bolder;
+  cursor: pointer;
+  color: rgb(16, 44, 97);
+  width: fit-content;
+  font-size: 14px;
+}
+.marker {
+    list-style-type:armenian;
 }
 .p {
- cursor: pointer;
- color: rgb(28, 68, 141);
- width: fit-content;
+  cursor: pointer;
+  color: rgb(28, 68, 141);
+  width: fit-content;
+}
 
+.other {
+    color: rgba(37, 37, 37, 0.993);
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .dropdown p {
- font-size: 13.5px;
+  font-size: 13.5px;
 }
 .dropdown {
- display: none;
+  display: none;
 }
 
 .appear {
- display: block;
+  display: block;
 }
 
-.htmlCssBootstrap, .jsJquery, .wps, .managerSw {
- display: none;
- position: fixed;
- top: 20%;
- right:10% ;
- left: 40%;
- background-color: rgba(255, 255, 255, 0.932);
- padding-bottom: 30px;
- width: 300px;
- border: none;
- border-radius: 7px;
+.htmlCssBootstrap,
+.jsJquery,
+.wps,
+.managerSw {
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 10%;
+  left: 40%;
+  background-color: rgba(255, 255, 255, 0.932);
+  padding-bottom: 30px;
+  width: 300px;
+  border: none;
+  border-radius: 7px;
 }
-.htmlCssBootstrap, .jsJquery, .wps, .managerSw ul{
- 
- padding-top: 0px;
- font-size: smaller;
- font-family:'Ubuntu', sans-serif;
+.htmlCssBootstrap,
+.jsJquery,
+.wps,
+.managerSw ul {
+  padding-top: 0px;
+  font-size: smaller;
+  font-family: "Ubuntu", sans-serif;
 }
-.htmlCssBootstrap, .jsJquery, .wps, .managerSw ul li {
- line-height: 1.7; 
- color:rgb(28, 67, 138) ;   
+.htmlCssBootstrap,
+.jsJquery,
+.wps,
+.managerSw ul li {
+  line-height: 1.7;
+  color: rgb(28, 67, 138);
 }
 a {
- font-weight: 500;
- text-decoration: none;
- color:rgb(28, 67, 138) ;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(28, 67, 138);
 }
-.htmlCssBootstrap, .jsJquery, .wps, .managerSw ul b{
- color:rgb(85, 85, 85) ;
+.htmlCssBootstrap,
+.jsJquery,
+.wps,
+.managerSw ul b {
+  color: rgb(85, 85, 85);
 }
 .click {
- font-size: 10px;
- background-color: rgb(64, 118, 189) ;
- border-radius: 13px;
- padding: 4px 4px 3px 3px;
- color: rgb(230, 227, 227);
- display: inline-block;  
- position: relative;
- bottom: 1px;
+  font-size: 10px;
+  background-color: rgb(64, 118, 189);
+  border-radius: 13px;
+  padding: 4px 4px 3px 3px;
+  color: rgb(230, 227, 227);
+  display: inline-block;
+  position: relative;
+  bottom: 1px;
 }
 
 .footTable {
- width:82%;
- margin: 60px auto;
- display: flex;
- justify-content: center;
+  width: 82%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
 }
-
 
 .n {
- display: none;
- margin: 5px;
- /* border: 1px solid rgb(182, 182, 182); */
- padding: 2px 10px;
- border-radius: 4px;
- color: rgb(28, 67, 138);
- font-size: 14px;
- font-weight: 600;
- letter-spacing: 1.5px;
- background-color: rgb(236, 236, 236);
- box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
- cursor: pointer;
- 
+  /* display: none; */
+  margin: 5px;
+  /* border: 1px solid rgb(182, 182, 182); */
+  padding: 2px 10px;
+  border-radius: 4px;
+  color: rgb(28, 67, 138);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
-.appearAgain{
- display: block;
-}
-.disappearAgain{
- display: none;
+
+.disappearAgain {
+  display: none;
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width:900px) {
- body {
-     margin:40px 20px 100px ;
- }
+@media screen and (max-width: 900px) {
+  body {
+    margin: 40px 20px 100px;
+  }
 
- .navHeader {
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     
- }
- .cv {
-     text-align: center;
- }
- .nav {
-     display: grid;
-     grid-template-columns: auto auto auto;
-     position: absolute;
-     top: 120px;
-     left: 15%;
-     right: 5%;
- 
- }
- .firstTable {
-     display: flex;
-     flex-direction: column;     
-     text-align: center;            
- }
-
+  .navHeader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cv {
+    text-align: center;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    top: 108px;
+    left: 15%;
+    right: 5%;
+  }
+  .firstTable {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .n {
+    display: none;
+    text-align: center;
+  }
+  .appearAgain {
+    display: block;
+  }
 }
-@media screen and (max-width:900px) {
-    .htmlCssBootstrap, .jsJquery, .wps, .managerSw {
-        width:250px;
-    }
- .footTable {
- display: flex;
- flex-direction: column;
- }
+@media screen and (max-width: 900px) {
+  .htmlCssBootstrap,
+  .jsJquery,
+  .wps,
+  .managerSw {
+    width: 250px;
+  }
+  .footTable {
+    display: flex;
+    flex-direction: column;
+  }
 }
