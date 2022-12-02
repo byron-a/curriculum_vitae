@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 th {
   color: rgba(8, 8, 153, 0.87);
 }
@@ -25,9 +28,7 @@ body {
   margin: 40px 100px 100px;
   font-family: "Ubuntu", sans-serif;
 }
-/* .cv {
- text-align: end;
-} */
+
 .navHeader {
   display: flex;
   justify-content: end;
@@ -49,6 +50,8 @@ B {
   color: rgb(16, 44, 97);
   width: fit-content;
   font-size: 14px;
+  margin-bottom: 0;
+ 
 }
 .marker {
     list-style-type:armenian;
@@ -68,12 +71,29 @@ B {
 .dropdown p {
   font-size: 13.5px;
 }
+.drops {
+  overflow: hidden;
+  height: 0px;
+  transition: height 2s linear;
+     /* display: none; */
+}
 .dropdown {
-  display: none;
+  /* position: relative; */
+  transform: translateY(-140%);
+  transition: transform 1s, visibility 2s linear;
+  visibility: hidden;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 5px;
+  padding: 0 10px;
+  width: fit-content;
+ 
 }
 
 .appear {
-  display: block;
+  /* display: block; */
+  transform: translateY(0px);
+  transition: transform 1s, visibility 1s linear;
+  visibility: visible;
 }
 
 .htmlCssBootstrap,
@@ -152,6 +172,13 @@ a {
 
 .disappearAgain {
   display: none;
+}
+
+sup {
+  background-color:rgb(28, 67, 138) ;
+  color:  rgb(182, 182, 182);
+  padding: 2px 5px;
+  border-radius: 25px;
 }
 
 /* MEDIA QUERIES */

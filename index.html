@@ -46,7 +46,7 @@
         <table cellspacing="20px">
             <tr class="firstTable">
                 <td> 
-                    <img src="./Assets/image/pass.PNG" alt="Byron's Picture" width="180px" style="border-radius: 100%;" >
+                    <img src="./Assets/image/pass.PNG" alt="Byron's Picture" width="180px" style="border-radius: 100%;">
                 </td>
                 <td>
                     
@@ -185,35 +185,44 @@
             <li ><b>Web Development :</b></li>
            <span style="line-height:0.6 ;">
             <p class="portfolio ">Tech Stack & Portfolio. <span class="click">Click here</span></p>
-            <div class="dropdown ">
-                <p class="hcb p">- HTML | CSS | Bootstrap,</p>
-                <p class="jsjq p">- JavaScript | JQuery,</p>
-                <p>- React.js | Redux.js  </p>
-                <p> <a href="https://github.com/byron-a?tab=repositories">My Github-Repos</a></p>
+            <div class="drops" >
+                <div class="dropdown ">
+                    <p class="hcb p">- HTML | CSS | Bootstrap,</p>
+                    <p class="jsjq p">- JavaScript | JQuery,</p>
+                    <p>- React.js | Redux.js  </p>
+                    <p> <a href="https://github.com/byron-a?tab=repositories">My Github-Repos</a></p>
+                </div>
+                
             </div>
             
            </span>
             
             <span style="line-height:0.6 ;">
             <p class="tool" >Dev Tools. <span class="click">Click here</span></p>
-            <div class="dropdown">
-                <p class=" ">- Webpack(module bundler)</p>
-                <p class=" ">- Node Package Manager(NPM).</p>
-                <p class=" ">- Bash(CLI).</p>
-                <p class=" ">- Visual Studio Code.</p>
-                <p class=" ">- Figma(UX/UI mark-up)</p>
+            <div class="drops" >
+                <div class="dropdown">
+                    <p class=" ">- Webpack(module bundler)</p>
+                    <p class=" ">- Node Package Manager(NPM).</p>
+                    <p class=" ">- Bash(CLI).</p>
+                    <p class=" ">- Visual Studio Code.</p>
+                    <p class=" ">- Figma(UX/UI mark-up)</p>
+                </div>
+                
             </div>
             
             </span>
             
             <p style="margin-top: 25px;"><li><b style="font-size:14.5px;">Other :</b></li> </p>
             <li class="marker" style="color: rgba(37, 37, 37, 0.993); font-size:14px;">Business Development.</li>
-            <span style="line-height:0.4 ;">
+            <span  style="line-height:0.4 ;">
             <p class="tool " style="font-size:14px; color: rgba(78, 78, 78, 0.993);">Tools. <span class="click" style="background-color: rgba(94, 94, 94, 0.993);">Click here</span></p>
-            <div class="dropdown">
-                <p class="wps1">- <span class="other"> Writer Presentation Spreadsheet(WPS) Office.</span></p>
+            <div class="drops">
+                <div class="dropdown">
+                    <p class="wps1">- <span class="other"> Writer Presentation Spreadsheet(WPS).</span></p>
                 <p class="manaSw">- <span class="other"> Manager (financial software).</span></p>
                 <p class="">- <span class="other"> Book-keeping.</span></p>
+                </div>
+                
             </div>
             
             </span>
@@ -331,7 +340,7 @@
             <li>Playing Basketball</li>
             <li>Listening to Music(esp. classic)</li>
             <li>Playing Chess</li>
-            <li>Curiousity towards Learning new things</li>
+            <li>Curiousity towards Learning</li>
         </ul>
         
     </section>
@@ -424,6 +433,7 @@
     let wps1 = document.querySelector('.wps1');
     let managerSw = document.querySelector('.managerSw');
     let manaSw = document.querySelector('.manaSw');
+    let drops = document.getElementsByClassName('drops')
 
     let menu = document.getElementsByClassName('menu');
     
@@ -452,7 +462,16 @@ function navbar(e){
     let count = 0;
 
     // CODE for PORTFOLIO dropdown behaviour.....
-    portfolio.addEventListener('click', ()=>{dropdown[0].classList.toggle('appear');
+    portfolio.addEventListener('click', ()=>{
+        dropdown[0].classList.toggle('appear');
+        if(dropdown[0].className == 'dropdown appear'){
+            drops[0].style.height = 'fit-content';
+        }else{
+           setTimeout(()=>{
+            drops[0].style.height = '0px';
+           },350) 
+        }
+        
         count = 1;
         none();
         });
@@ -487,10 +506,26 @@ function none(){
     });  
 
 // CODE for TOOL dropdown behaviour.....
-tool[0].addEventListener('click', ()=>{dropdown[1].classList.toggle('appear')
+tool[0].addEventListener('click', ()=>{
+    dropdown[1].classList.toggle('appear');
+    if(dropdown[1].className == 'dropdown appear'){
+            drops[1].style.height = 'fit-content';
+        }else{
+           setTimeout(()=>{
+            drops[1].style.height = '0px';
+           },350) 
+        }
     
 });
-tool[1].addEventListener("click", ()=>{dropdown[2].classList.toggle('appear')
+tool[1].addEventListener("click", ()=>{
+    dropdown[2].classList.toggle('appear');
+    if(dropdown[2].className == 'dropdown appear'){
+            drops[2].style.height = 'fit-content';
+        }else{
+           setTimeout(()=>{
+            drops[2].style.height = '0px';
+           },350) 
+        }
     count = 1;
     none();
 });  
