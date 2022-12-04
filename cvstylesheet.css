@@ -33,11 +33,21 @@ body {
   display: flex;
   justify-content: end;
 }
+
+.cv {
+  margin-bottom: 24px;
+}
+
 .nav {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   align-items: center;
   margin-right: 40px;
+}
+
+.contactMe {
+  display: none;
+  float: right;
 }
 
 B {
@@ -194,6 +204,7 @@ sup {
   }
   .cv {
     text-align: center;
+    margin-bottom: 20px;
   }
   .nav {
     display: grid;
@@ -203,6 +214,10 @@ sup {
     left: 15%;
     right: 5%;
   }
+.contactMe {
+  display: block;
+}
+
   .firstTable {
     display: flex;
     flex-direction: column;
