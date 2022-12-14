@@ -3,4 +3,4 @@
 ![View](./Assets/image/ResumeSnapShot.PNG)
 
 ### Link
-[Curriculum vitae](https://byron-a.github.io/curriculum_vitae/)
+[live view](https://byron-a.github.io/curriculum_vitae/)
