@@ -3,4 +3,4 @@
 ![View](./ResumeSnapShot.PNG)
 
 ## Link
-[](https://byron-a.github.io/curriculum_vitae/)
+[Curriculum vitae](https://byron-a.github.io/curriculum_vitae/)
