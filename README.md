@@ -2,5 +2,5 @@
 
 ![View](./ResumeSnapShot.PNG)
 
-## Link
+### Link
 [Curriculum vitae](https://byron-a.github.io/curriculum_vitae/)
