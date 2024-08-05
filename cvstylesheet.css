@@ -50,6 +50,10 @@ body {
   float: right;
 }
 
+.experience {
+  /* display: flex; */
+}
+
 B {
   color: rgba(61, 61, 61, 0.911);
 }
@@ -62,6 +66,12 @@ B {
   font-size: 14px;
   margin-bottom: 0;
  
+}
+.repo {
+  /* align-self: end; */
+  margin-right: 25px;
+  font-weight: lighter;
+  float: right;
 }
 .marker {
     list-style-type:armenian;
@@ -106,8 +116,11 @@ B {
   visibility: visible;
 }
 
+
+
 .htmlCssBootstrap,
 .jsJquery,
+.styledTailTypeReactNext,
 .wps,
 .managerSw {
   display: none;
@@ -123,6 +136,7 @@ B {
 }
 .htmlCssBootstrap,
 .jsJquery,
+.styledTailTypeReactNext,
 .wps,
 .managerSw ul {
   padding-top: 0px;
@@ -131,6 +145,7 @@ B {
 }
 .htmlCssBootstrap,
 .jsJquery,
+.styledTailTypeReactNext,
 .wps,
 .managerSw ul li {
   line-height: 1.7;
@@ -143,6 +158,7 @@ a {
 }
 .htmlCssBootstrap,
 .jsJquery,
+.styledTailTypeReactNext,
 .wps,
 .managerSw ul b {
   color: rgb(85, 85, 85);
@@ -237,6 +253,7 @@ sup {
 @media screen and (max-width: 900px) {
   .htmlCssBootstrap,
   .jsJquery,
+  .styledTailTypeReactNext,
   .wps,
   .managerSw {
     width: 250px;
