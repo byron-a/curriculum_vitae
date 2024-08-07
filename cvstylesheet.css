@@ -25,7 +25,7 @@ th {
 }
 
 body {
-  margin: 40px 100px 100px;
+  margin: 40px 100px 10px;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -50,22 +50,23 @@ body {
   float: right;
 }
 
-.experience {
-  /* display: flex; */
-}
 
 B {
   color: rgba(61, 61, 61, 0.911);
 }
 .tool,
 .portfolio {
+  display: flex;
+  justify-content: space-between;
   font-weight: bolder;
   cursor: pointer;
   color: rgb(16, 44, 97);
   width: fit-content;
   font-size: 14px;
   margin-bottom: 0;
- 
+}
+.portfolio span, .tool span {
+  margin-right: 4px;
 }
 .repo {
   /* align-self: end; */
@@ -73,13 +74,17 @@ B {
   font-weight: lighter;
   float: right;
 }
+.stt2rn {
+  line-height: 18px;
+  /* text-wrap:wrap; */
+}
 .marker {
     list-style-type:armenian;
 }
 .p {
   cursor: pointer;
   color: rgb(28, 68, 141);
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .other {
@@ -90,6 +95,7 @@ B {
 
 .dropdown p {
   font-size: 13.5px;
+  display: block;
 }
 .drops {
   overflow: hidden;
@@ -105,8 +111,9 @@ B {
   border: 1px solid rgb(172, 172, 172);
   border-radius: 5px;
   padding: 0 10px;
+  margin-top: 4px;
   width: fit-content;
- 
+  text-wrap: wrap;
 }
 
 .appear {
@@ -126,7 +133,7 @@ B {
   display: none;
   position: fixed;
   top: 20%;
-  right: 10%;
+  right: 40%;
   left: 40%;
   background-color: rgba(255, 255, 255, 0.932);
   padding-bottom: 30px;
@@ -164,14 +171,12 @@ a {
   color: rgb(85, 85, 85);
 }
 .click {
-  font-size: 10px;
+  font-size: 7px;
   background-color: rgb(64, 118, 189);
   border-radius: 13px;
-  padding: 4px 4px 3px 3px;
+  padding: 4px 6px 2px 6px;
   color: rgb(230, 227, 227);
-  display: inline-block;
-  position: relative;
-  bottom: 1px;
+  display: block;
 }
 
 .footTable {
@@ -201,16 +206,25 @@ a {
 }
 
 sup {
+  position:fixed;
+  bottom: 2.5px;
   background-color:rgb(28, 67, 138) ;
   color:  rgb(182, 182, 182);
-  padding: 2px 5px;
-  border-radius: 25px;
+  padding: 5px 8px 2px;
+  border-radius: 100%;
+}
+
+.bottomNav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
 }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px) {
   body {
-    margin: 40px 20px 100px;
+    margin: 40px 20px 10px;
   }
 
   .navHeader {
@@ -256,10 +270,25 @@ sup {
   .styledTailTypeReactNext,
   .wps,
   .managerSw {
-    width: 250px;
+    width: 270px;
+    left: 33%;
+    right: 33%;
   }
   .footTable {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .htmlCssBootstrap,
+  .jsJquery,
+  .styledTailTypeReactNext,
+  .wps,
+  .managerSw {
+    width: 270px;
+    left: 15%;
+    right: 15%;
+  }
+  
 }
