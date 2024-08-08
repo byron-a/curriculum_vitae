@@ -311,8 +311,7 @@ sup {
     right: 15%;
   }
   .nav {
-    left: 0%;
-    right:8%;
+    margin: auto;
   }
   
 }
