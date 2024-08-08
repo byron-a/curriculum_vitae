@@ -29,6 +29,8 @@ body {
 
 .navHeader {
   display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: row-reverse;
   justify-content: start;
   border: 1px solid rgba(183, 183, 183, 0.911);
