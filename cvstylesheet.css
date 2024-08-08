@@ -1,9 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-th {
-  color: rgba(6, 6, 131, 0.87);
-}
+
 .focus {
   border: 2px solid rgba(185, 199, 196, 0.548);
   border-radius: 10px;
@@ -209,6 +207,9 @@ a {
 
 .disappearAgain {
   display: none;
+}
+th {
+  color: #1A4870;
 }
 
 sup {
