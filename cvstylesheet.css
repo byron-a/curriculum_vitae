@@ -38,6 +38,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
   background-color: #1A4870;
+  z-index: 100;
 }
 
 .cv {
@@ -192,6 +193,9 @@ a {
   margin: 60px auto;
   display: flex;
   justify-content: center;
+  div {
+    margin: 7%;
+  }
 }
 
 .n {
@@ -284,6 +288,15 @@ sup {
     display: block;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .footTable {
+    div {
+      margin: 2%;
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
   .htmlCssBootstrap,
   .jsJquery,
@@ -294,6 +307,9 @@ sup {
     left: 33%;
     right: 33%;
   }
+}
+
+@media screen and (max-width:660px) {
   .footTable {
     display: flex;
     flex-direction: column;

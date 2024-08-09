@@ -178,7 +178,7 @@
             </tr> -->
             <tr>
                 <td>
-                    <h4>Prior to Graduation</h4>
+                    <h4>Prior to 1st Degree Graduation</h4>
                 </td>
             </tr>
             <tr class="firstTable">
@@ -289,7 +289,7 @@
                 <article class="styledTailTypeReactNext">
                     <ul>
                         <b style="word-spacing:1px; text-align: center;"> My Version:</b>
-                        <li><a href="https://byron-a.github.io/RadioHead-tj/" target="_blank">Radio Head</a></li>
+                        <li><a href="https://byron-a.github.io/RadioHead-tj/" target="_blank">Radio Head (static)</a></li>
                         <li><a href="https://byron-a.github.io/task-tracker-Clone/" target="_blank">Task Tracker</a></li>
                         <li><a href="https://byron-a-react-movie-project-clone.netlify.app/" target="_blank">React Movie Gallery (On Netlify)</a></li>
                         <b style="word-spacing:1px; text-align: start; display: block; margin-top: 3px;"> TeonSuite Projects(Excite Africa):</b>
@@ -336,7 +336,7 @@
       <section id="education" class="focus">
         <h4 style="color: #1A4870;">EDUCATION. </h4>
         <hr>
-        <table cellspacing="10px">
+        <table cellspacing="10px" class="firstTable">
             <tr class="firstTable">
                 <td>
                     <p>2010-2015: </p>
@@ -403,7 +403,7 @@
     <!-- section 6 Contact details -->
     <section id="contact" class="focus">
         <div class="footTable"  >
-            <div style="margin:7%;">
+            <div >
                 <table cellpadding="10px" align="center">
                 <tr>
                     <th>Contact Address:</th>
@@ -419,7 +419,7 @@
                 </tr>
                 </table>
             </div>
-            <div style="margin:7% ;">
+            <div >
                 <table cellpadding="10px" align="center">
                     <tr>
                         <th>Mobile:</th>
@@ -436,7 +436,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="margin:7% ;">
+            <div >
                 <table cellpadding="10px" align="center">
                     <tr>
                         <th>Email:</th>
@@ -499,16 +499,18 @@
 //nav bar behaviour
 import {navbarContact, navbarRemove} from "./script.js"
 var slide = 0;
+var navcount = 0;
 menu[0].addEventListener('click', navbar);
 
 function navbar(e){
-    e.stopPropagation()
+    e.stopPropagation();
     if(slide >0){
         slide=0;
         navbarRemove();
         
     }else{
-        slide++;
+        navcount++;
+        slide++; 
         navbarContact();
        
     }
@@ -642,7 +644,7 @@ manaSw.addEventListener('click', function(){
 
 //CODE to HIDE popups on body click!....
 let disappear = false;
-    document.addEventListener('click', ()=>{
+    document.addEventListener('click', (e)=>{
         if(disappear==true){
             htmlCssBootstrap.style.display = 'none';
             jsJquery.style.display = 'none';
@@ -654,7 +656,13 @@ let disappear = false;
         }else if(count == 0){
             disappear = true; 
         }
-         
+        if(navcount > 0) {
+            slide++;
+            // console.log('count is greater than',navcount,slide)
+            navcount = 0;
+            navbar(e);
+            // console.log('count is greater than',navcount,slide)
+        }    
     })         
     
    
