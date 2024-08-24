@@ -365,7 +365,7 @@ sup {
   ul {
     padding-left: 14px;
   }
-  .hobby {
+  .hobby, .skill {
     padding-left: 30px;
   }
 }
