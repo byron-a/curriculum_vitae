@@ -65,7 +65,7 @@ body {
   border-radius: 5px;
 }
 .contactMe {
-  display: none;
+  display: block;
   float: right;
 }
 
@@ -279,9 +279,9 @@ sup {
     left: 6%;
     right: 10%;
   }
-.contactMe {
+/* .contactMe {
   display: block;
-}
+} */
 
   .firstTable {
     display: flex;
