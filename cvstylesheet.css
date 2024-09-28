@@ -105,7 +105,9 @@ B {
   color: rgb(28, 68, 141);
   /* width: fit-content; */
 }
-
+.location {
+  font-size: small;
+}
 .other {
     color: rgba(37, 37, 37, 0.993);
     text-decoration-line: underline;
