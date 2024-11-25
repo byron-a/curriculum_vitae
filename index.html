@@ -20,7 +20,23 @@
 
     <title>Memoir</title>
 
-  
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '488122651049490');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=488122651049490&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body style="background-color:rgba(217, 217, 217, 0.548);">
@@ -101,7 +117,7 @@
                         <p class=" ">- Visual Studio Code.</p>
                         <p class=" ">- Chrome DevTools</p>
                         <p class=" ">- Redux DevTools</p>
-                        <p class=" ">- Figma(UX/UI mark-up)</p>
+                        <p class=" ">- Figma(UX/UI mock-up)</p>
                     </div>
                     
                 </div>
@@ -553,18 +569,23 @@
 
 
 
-<!-- <script type="text/JavaScript">
-    let dow;
-      function getme(text){
-            text.innerHTML = 'trial';
-            // document.location ='#summary';
-            // confirm('please choose ');
-            const {Geolocation} = navigator.geolocation
-            console.log(navigator.geolocation);
-            //  dow = window.open("https://www.google.com","_self","width=400","height=200");
-            // console.log(dow.location.assign('https://www.google.com'))
-        }
-</script> -->
+<script type="text/JavaScript">
+    function TreeConstructor(strArr) {
+  // parse strArr;
+  strArr = strArr.map(item => {
+    item = item.replace(/[() ]+/g, '');
+    return console.log(item.split(','));
+  });
+
+  console.log(strArr[0], strArr.length)
+  }
+
+  TreeConstructor(["(1,2)", "(2,4)", "(7,2)"]);
+  let arry = ['i', 'j', 'k', 'l']
+  let string= 'iajijaojie';
+  console.log(arry.join(''))
+  
+</script>
 <!-- JavaScript -->
 <script type="module">
     
